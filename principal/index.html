@@ -18,11 +18,11 @@
         <div class="barrapesquisa">
             <form action="search">
                 <input type="text" placeholder="Busque por título, autor, editora, ISBN...">
-                <button class="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
-        <button class="button"><i class="fa-solid fa-universal-access"></i></button>
-        <button class="button"><i class="fa-regular fa-circle-user"></i></button>
+        <button type="submit" class="button"><i class="fa-solid fa-universal-access"></i></button>
+        <button type="submit" class="button"><i class="fa-regular fa-bell"></i></button>
     </header>
     <nav class="menu">
        <a href="#"><i class="fa-solid fa-bars"></i> Minha estante</a>
@@ -33,7 +33,30 @@
     </nav>
     <hr id="barrinha">
     <section class="recomendacoes">
-        <h1>Recomendações do Dia</h1>
+        <h2>Recomendações do Dia</h2>
+        <div class="background">
+            <div class="cardrecomend">
+                <img src="" alt="">
+                <div class="infos">
+                    <p id="titulo">Título</p>
+                    <p>Autor</p>
+                    <p>Ano</p>
+                    <p>Edição</p>
+                </div>
+                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
+                <div class="avaliacao">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <p class="sinopse">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus aliquam ipsum cupiditate 
+                beatae aliquid in voluptatum totam eligendi accusantium sint nostrum iusto dignissimos dolores eos, iste corporis at asperiores.
+                </p>
+            </div>
+        </div>
     </section>
 </body>
 </html>

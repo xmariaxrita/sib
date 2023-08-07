@@ -6,9 +6,8 @@
 
 header {
     align-items: center;
-    /* background-color: blueviolet; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -25,41 +24,50 @@ header {
 
 .logo span {
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     margin-left: 20px;
 }
 
 /* Barra de pesquisa */
+.barrapesquisa {
+    display: inline;
+    text-align: center;
+}
+
 .barrapesquisa input[type=text] {
     border: 3px solid #000;
     border-radius: 10px;
-    font-style: normal;
     height: 45px;
-    line-height: normal;
-    width: 797.64px;
+    width: 764.6px;
 }
 
 .barrapesquisa ::placeholder {
     color: #7D7C83;
     font-size: 0,875em;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    padding-left: 10px;
+}
+
+.barrapesquisa button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 18px; /* Tamanho do ícone */
+    margin: auto -8%;
+    padding: 10px 20px;
 }
 
 /* Botões */
 .button {
-    background: rgb(255, 255, 255);
+    background: none;
     border: none;
-    height: 20px;  
-    width: 20px;
+    font-size: 25px; /* Tamanho do ícone */
 }
 
 /* Menu */
 .menu {
     align-items: center;
-    /* background-color: aqua; */
     display: flex;
     height: 60px;
     justify-content: space-evenly;
@@ -67,17 +75,95 @@ header {
     text-align: center;
 }
 
+.fa-bars::before { /* Ícone do menu "Minha estante" */
+    margin-right: 3px;
+}
+
 .menu a {
     color:#000;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     padding: 0px 90px;
     text-decoration: none;
 }
 
 #barrinha {
-    background:  linear-gradient(to right, #fe4632 25%, #1ed760 25%, #1ed760 50%, #2d46ba 50%, #2d46ba 75%, #fae62d 75%);
+    background: linear-gradient(to right, #fe4632 25%, #1ed760 25%, #1ed760 50%, #2d46ba 50%, #2d46ba 75%, #fae62d 75%);
     border-style: none;
     height: 4px;
+}
+
+/* Recomendações */
+
+.recomendacoes {
+    margin-top: 50px;
+}
+
+.recomendacoes h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.background {
+    background: #063d70; /* Cor para visualização */
+    display: flex;
+    height: 525px;
+    margin: auto;
+}
+
+/* Card */
+
+.cardrecomend {
+    background: #ff4d4d; /* Cor para visualização */
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 402px;
+    margin: auto;
+    width: 1069px;
+}
+
+#titulo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.infos p {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+/* Botão "Reservar" */
+
+.fa-plus::before { /*Ícone do botão "Reservar"*/
+    margin-right: 10px;
+    stroke-width: 2px;
+}
+
+.reserva {
+    color: #FFFFFF;
+    background-color: #000;
+    border: 0 solid #000;
+    border-radius: 10px;
+    font-size: 0.9375em;
+    font-weight: 700;
+    height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 143px;
+}
+
+.avaliacao {
+    color: #fae62d;
+    display: flex;
+    font-size: 30px; /* Tamanho do ícone */
+    justify-content: space-between;
+    width: 224.719px;
+}
+
+.sinopse {
+    font-size: 1.03125em;
+    font-weight: 500;
+    text-align: justify;
+    width: 522px;
 }
