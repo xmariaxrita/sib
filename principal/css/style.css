@@ -106,7 +106,7 @@ header {
 }
 
 .background {
-    background: #063d70; /* Cor para visualização */
+    background: #F8F8F8;
     display: flex;
     height: 525px;
     margin: auto;
@@ -115,27 +115,36 @@ header {
 /* Card */
 
 .cardrecomend {
-    background: #ff4d4d; /* Cor para visualização */
+    background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px #00000040;
     height: 402px;
     margin: auto;
-    width: 1069px;
+    width: 1070px;
+}
+
+.capa {
+    background-color: #000;
+    display: inline-block;
+    margin: 56.25px 30px 56.25px 156px;
+    height: 290px;
+    width: 190px;
+}
+
+table {
+    display: inline-block;
+    /* margin: 56.25px 20px 56.25px; */
 }
 
 #titulo {
     font-size: 2em;
-    font-weight: 600;
-}
-
-.infos p {
-    font-weight: 600;
-    font-size: 1.25em;
+    font-weight: 800;
+    text-align: left;
 }
 
 /* Botão "Reservar" */
 
-.fa-plus::before { /*Ícone do botão "Reservar"*/
+.fa-plus::before { /* Ícone do botão "Reservar" */
     margin-right: 10px;
     stroke-width: 2px;
 }
@@ -148,16 +157,22 @@ header {
     font-size: 0.9375em;
     font-weight: 700;
     height: 34px;
+    margin-left: -150px;
     text-align: center;
     text-transform: uppercase;
     width: 143px;
 }
 
+td {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
 .avaliacao {
     color: #fae62d;
-    display: flex;
-    font-size: 30px; /* Tamanho do ícone */
+    font-size: 25px; /* Tamanho do ícone */
     justify-content: space-between;
+    margin: 20px 0;
     width: 224.719px;
 }
 
