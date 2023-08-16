@@ -59,10 +59,31 @@ header {
 }
 
 /* Botões */
-.button {
+.botaoicon {
     background: none;
     border: none;
     font-size: 25px; /* Tamanho do ícone */
+}
+
+#botaologin {
+    background: #E9E9E9;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    height: 39px;
+    width: 81px;
+}
+
+#botaocadastro {
+    background: #1ED760;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 700;
+    height: 39px;
+    width: 144px;
 }
 
 /* Menu */
