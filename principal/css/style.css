@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-Light.ttf');
+}
+
 header {
     align-items: center;
     display: flex;
@@ -144,7 +149,7 @@ header {
     width: 1070px;
 }
 
-.capa {
+.cardcapa {
     background-color: #000;
     display: inline-block;
     margin: 56.25px 30px 56.25px 156px;
@@ -170,7 +175,7 @@ table {
     stroke-width: 2px;
 }
 
-.reserva {
+.reservacard {
     color: #FFFFFF;
     background-color: #000;
     border: 0 solid #000;
@@ -189,7 +194,7 @@ td {
     font-size: 1.25em;
 }
 
-.avaliacao {
+.cardavaliacao {
     color: #fae62d;
     font-size: 25px; /* Tamanho do ícone */
     justify-content: space-between;
@@ -202,4 +207,51 @@ td {
     font-weight: 500;
     text-align: justify;
     width: 522px;
+}
+
+.cardslivros {
+     text-align: center;
+     margin: 50px 0px;
+}
+
+.titulo {
+    margin: 0px 0px 45px 85px;
+    text-align: left;
+}
+
+.card {
+    background: #F7F7F8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    height: 485px;
+    margin: 0px 20px 0px;
+    width: 255px;
+}
+
+.capa {
+    background-color: #000;
+    height: 250px;
+    margin: 38px 36px 17px;
+    width: 181.875px;
+}
+
+.titulolivro {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 36px;
+    text-align: left;
+}
+.reserva {
+    background: #BFBFBF;
+    border: none;
+    border-radius: 10px;
+    height: 34px;
+    margin-top: 10px;
+    width: 170px
 }
