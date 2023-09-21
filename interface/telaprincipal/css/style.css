@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Aktifo-A';
     src: url(fonts/Aktifo-A-Light.ttf);
 }
@@ -29,7 +29,7 @@ header {
 
 .logo span {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bold;
     margin-left: 20px;
 }
 
@@ -86,7 +86,7 @@ header {
     border-radius: 10px;
     color: #FFFFFF;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: bold;
     height: 39px;
     width: 144px;
 }
@@ -107,7 +107,7 @@ header {
 
 .menu a {
     color:#000;
-    font-weight: 700;
+    font-weight:700;
     padding: 0px 90px;
     text-decoration: none;
 }
@@ -126,7 +126,7 @@ header {
 
 .recomendacoes h2 {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -144,6 +144,7 @@ header {
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
     height: 402px;
     margin: auto;
     width: 1070px;
@@ -159,6 +160,7 @@ header {
 
 table {
     display: inline-block;
+    margin: 56.25px 0px ;
 }
 
 #titulo {
@@ -240,7 +242,7 @@ td {
 
 .titulolivro {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 p {
@@ -261,7 +263,7 @@ p {
     background: #BFBFBF; /* Precisa de outra cor */
     border: none;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: bold;
     height: 34px;
     margin-top: 10px;
     text-align: center;
@@ -270,12 +272,12 @@ p {
 }
 
 .generos {
-    text-align: center;
     margin: 50px 0px 95px;
+    text-align: center;
 }
 
 .cardsgeneros {
-    display: inline-block;
+    margin: auto;
 }
 
 .gencard {
@@ -297,7 +299,7 @@ p {
 .iconecardgen {
     display: inline;
     height: 70px;
-    margin: 0px 25px 0px 145px;
+    margin: 10px 0px 0px 135px;
     opacity: 0.5;
     text-align: right;
     width: 70px;
