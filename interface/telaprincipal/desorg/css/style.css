@@ -1,0 +1,91 @@
+.cardslivros {
+    text-align: center;
+    margin: 50px 0px 95px;
+}
+
+.titulo {
+   margin: 0px 0px 45px 85px;
+   text-align: left;
+}
+
+.card {
+   background: #F7F7F8;
+   border-radius: 10px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   display: inline-block;
+   height: 485px;
+   margin: 0px 50px 0px;
+   width: 255px;
+}
+
+.capa {
+   background-color: #000;
+   height: 250px;
+   margin: 38px 36px 10px;
+   width: 181.875px;
+}
+
+.titulolivro {
+   font-size: 14px;
+   font-weight: bold;
+}
+
+p {
+   font-weight: 500;
+   font-size: 12px;
+   margin: 3.5px 36px 0px 36px;
+   text-align: left;
+}
+
+.avaliacao {
+   color: #fae62d;
+   justify-content: space-between;
+   margin: 3px 0px 4px 36px;
+   text-align: left;
+}
+
+.reserva {
+   background: #BFBFBF; /* Precisa de outra cor */
+   border: none;
+   border-radius: 10px;
+   font-weight: bold;
+   height: 34px;
+   margin-top: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   width: 170px
+}
+
+.generos {
+   margin: 50px 0px 95px;
+   text-align: center;
+}
+
+.cardsgeneros {
+   margin: auto;
+}
+
+.gencard {
+   border-radius: 40px;
+   display: inline-block;
+   height: 150px;
+   margin: 0px 10px 0px 10px;
+   width: 250px;
+}
+
+.nomegen {
+   color: #FFF;
+   font-size: 19px;
+   font-weight: 600;
+   margin: 31px 0px 0px 22px;
+   text-align: left;
+}
+
+.iconecardgen {
+   display: inline;
+   height: 70px;
+   margin: 10px 0px 0px 135px;
+   opacity: 0.5;
+   text-align: right;
+   width: 70px;
+}

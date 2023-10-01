@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,343 +11,81 @@
     <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
     <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <header>
+
             <div class="logo">
                 <img src="img/logo.png" alt="SIB"><span>sib</span>
             </div>
-            <div class="barrapesquisa">
+            <div class="searchbar">
                 <form action="search">
                     <input type="text" placeholder="Busque por título, autor, editora, ISBN...">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
-            <button class="botaoicon">
-                <svg width="29" height="29" 
-                viewBox="0 0 29 29" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.5 27C21.4035 27 27 21.4035 27 14.5C27 7.59644 21.4035 2 14.5 2C7.59644 2 2 7.59644 2 14.5C2 21.4035 7.59644 27 14.5 27Z" 
-                    stroke="black" 
-                    stroke-width="2.5" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round"/>
-                    <path d="M8.25 10.75L14.5 12M14.5 12L20.75 10.75M14.5 12V15.75M14.5 15.75L12 22M14.5 15.75L17 22" 
-                    stroke="black" 
-                    stroke-width="2.5" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round"/>
-                    <path d="M14.5 8.25C14.1549 8.25 13.875 7.97018 13.875 7.625C13.875 7.27983 14.1549 7 14.5 7C14.8451 7 15.125 7.27983 15.125 7.625C15.125 7.97018 14.8451 8.25 14.5 8.25Z" 
-                    fill="black" 
-                    stroke="black" 
-                    stroke-width="2.5" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round"/>
+            <button class="btn-icon">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.5 27C21.4035 27 27 21.4035 27 14.5C27 7.59644 21.4035 2 14.5 2C7.59644 2 2 7.59644 2 14.5C2 21.4035 7.59644 27 14.5 27Z"
+                        stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.25 10.75L14.5 12M14.5 12L20.75 10.75M14.5 12V15.75M14.5 15.75L12 22M14.5 15.75L17 22"
+                        stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M14.5 8.25C14.1549 8.25 13.875 7.97018 13.875 7.625C13.875 7.27983 14.1549 7 14.5 7C14.8451 7 15.125 7.27983 15.125 7.625C15.125 7.97018 14.8451 8.25 14.5 8.25Z"
+                        fill="black" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </button>
-            <button id="botaologin">Login</button>
-            <button id="botaocadastro">Cadastre-se</button>
+            <div class="d-margin">
+                <button class="btn-login">Login</button>
+                <button class="btn-signup">Cadastre-se</button>
+            </div>
         </header>
-        <nav class="menu">
-        <a href="#"><i class="fa-solid fa-bars"></i> Minha estante</a>
-        <a href="#">Acervo</a>
-        <a href="#">Explorar</a>
-        <a href="#">Destaques</a>
-        <a href="#">Recomendações</a>
+        <nav>
+            <a href="#"><i class="fa-solid fa-bars"></i> Minha estante</a>
+            <a href="#">Acervo</a>
+            <a href="#">Explorar</a>
+            <a href="#">Destaques</a>
+            <a href="#">Recomendações</a>
         </nav>
-        <hr id="barrinha">
-        <!-- Recomendações do Dia -->
-        <section class="recomendacoes">
-            <h2 id="titulorecomend">Recomendações do Dia</h2>
+        <hr>
+
+        <section>
+            <h2>Recomendação do Dia</h2>
             <div class="background">
-                <div class="cardrecomend">
-                    <img src="img/capas/O-Santo-e-a-Porca.jpg" alt="" class="cardcapa">
-                    <table>
-                        <tr>
-                            <th id="titulo">O santo e a porca</th>
-                            <th><button class="reservacard"><i class="fa-solid fa-plus"></i>Reservar</button></th>
-                        </tr>
-                        <tr>
-                            <td>Ariano Suassuna</td>
-                        </tr>
-                        <tr>
-                            <td>1957</td>
-                        </tr>
-                        <tr>
-                            <td>35ª edição (2000)</td>
-                        </tr>
-                        <tr>
-                            <td class="cardavaliacao">
-                                    <span class="fa-solid fa-star completa"></span>
-                                    <span class="fa-solid fa-star completa"></span>
-                                    <span class="fa-solid fa-star completa"></span>
-                                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                                    <span class="fa-regular fa-star vazia"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="sinopse">
-                                Escrita em novembro de 1957, O Santo e a Porca retoma um tema clássico com uma roupagem original: não apresenta o vício da avareza apenas pelo que nele há de risível, a exemplo do que fizeram Plauto e Molière, mas, também, do por seu aspecto doloroso, tomando o ponto de vista de quem o possui.
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <!-- Destaques -->
-        <section class="cardslivros">
-            <h2 class="titulo">Destaques</h2>
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Título</p>
-                <p>
-                    Autor<br>
-                    Ano<br>
-                    Edição (ano da edição)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Título</p>
-                <p>
-                    Autor<br>
-                    Ano<br>
-                    Edição (ano da edição)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Título</p>
-                <p>
-                    Autor<br>
-                    Ano<br>
-                    Edição (ano da edição)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Título</p>
-                <p>
-                    Autor<br>
-                    Ano<br>
-                    Edição (ano da edição)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-        </section>
-        <!-- Literatura brasileira -->
-        <section class="cardslivros">
-            <h2 class="titulo">Literatura brasileira</h2>
-             <!-- Livro 1 -->
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Dom Casmurro</p>
-                <p>
-                    Machado de Assis<br> 
-                    1899<br>
-                    1ª edição (2020)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-            <!-- Livro 2 -->
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Vidas Secas</p>
-                <p>
-                    Graciliano Ramos<br>
-                    1938<br>
-                    159ª edição (2019)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-            <!-- Livro 3 -->
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">O cortiço</p>
-                <p>
-                    Aluisio Azevedo<br>
-                    1890<br>
-                    1ª edição (2021)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-            <!-- Livro 4 -->
-            <div class="card">
-                <img src="" alt="" class="capa">
-                <p class="titulolivro">Macunaíma</p>
-                <p>
-                    Mário de Andrade<br>
-                    1928<br>
-                    1ª edição (2022)<br>
-                </p>
-                <div class="avaliacao">
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-solid fa-star completa"></span>
-                    <span class="fa-regular fa-star-half-stroke metade"></span>
-                    <span class="fa-regular fa-star vazia"></span>
-                </div>
-                <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-            </div>
-        </section>
-        <section class="generos">
-            <h2 class="titulo">Explore gêneros</h2>
-            <div class="cardsgeneros">
-                <!-- Gênero 1 -->
-                <div class="gencard" style="background: linear-gradient(180deg, #FE6F60 0%,  #FE4632 50%, #EF1901 100%)">
-                    <p class="nomegen">Clássicos</p>
-                    <img src="svg/classicos.svg" alt="" class="iconecardgen">
-                </div>
-                <!-- Gênero 2 -->
-                <div class="gencard" style="background: linear-gradient(180deg, #F892B6 0%,  #F673A1 50%, #F12B70 100%)">
-                    <p class="nomegen">Romance</p>
-                    <img src="svg/romance.svg" alt="" class="iconecardgen">
-                </div>
-                <!-- Gênero 3 -->
-                <div class="gencard" style="background: linear-gradient(180deg, #D7F786 0%,  #CDF564 50%, #B6F120 100%)">
-                    <p class="nomegen" style="color: #000;">Comédia</p>
-                    <img src="svg/comedia.svg" alt="" class="iconecardgen">
-                </div>
-                <!-- Gênero 4 -->
-                <div class="gencard" style="background: linear-gradient(180deg, #A686F7 0%,  #8E66F5 50%, #5B20F1 100%)">
-                    <p class="nomegen">Fantasia</p>
-                    <img src="svg/fantasia.svg" alt="" class="iconecardgen">
-                </div>
-                <!-- Gênero 5 -->
-                <div class="gencard" style="background: linear-gradient(180deg, #4E66D4 0%,  #2D46BA 50%, #233791 100%)">
-                    <p class="nomegen"> Mistério e crime</p>
-                    <img src="svg/misterio.svg" alt="" class="iconecardgen">
-                </div>
-        </section>
-                <!-- Livros de Contos -->
-                <section class="cardslivros">
-                    <h2 class="titulo">Livros de Contos</h2>
-                     <!-- Livro 1 -->
-                    <div class="card">
-                        <img src="img/capas/Feliz-Ano-Novo.jpg" alt="Feliz Ano Novo" class="capa">
-                        <p class="titulolivro">Feliz Ano Novo</p>
-                        <p>
-                            Rubem Fonseca<br> 
-                            1975<br>
-                            11ª edição (2021)<br>
+                <div class="c-recommend">
+                    <img src="img/capas/O-Santo-e-a-Porca.jpg" alt="" class="c-recommend-cover" />
+                    <div class="c-recommend-info">
+                        <div class="d-flex">
+                            <h3 class="c-recommend-title">O santo e a porca</h3>
+                            <button class="c-recommend-reserve">
+                                <i class="fa-solid fa-plus"></i>Reservar
+                            </button>
+                        </div>
+                        <p class="c-recommend-bookinfo">
+                            Ariano Suassuna, 1957<br />
+                            Editora Nova Fronteira - 35ª edição (2000)
                         </p>
-                        <div class="avaliacao">
+                        <div class="c-recommend-review">
                             <span class="fa-solid fa-star completa"></span>
                             <span class="fa-solid fa-star completa"></span>
                             <span class="fa-solid fa-star completa"></span>
                             <span class="fa-regular fa-star-half-stroke metade"></span>
                             <span class="fa-regular fa-star vazia"></span>
                         </div>
-                        <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-                    </div>
-                    <!-- Livro 2 -->
-                    <div class="card">
-                        <img src="img/capas/Morangos-Mofados.jpg" alt="Morangos mofados" class="capa">
-                        <p class="titulolivro">Morangos mofados</p>
-                        <p>
-                            Caio Fernando Abreu<br>
-                            1982<br>
-                            1ª edição (2019)<br>
+                        <p class="c-recommend-synopsis">
+                            Escrita em novembro de 1957, O Santo e a Porca retoma um tema
+                            clássico com uma roupagem original: não apresenta o vício da
+                            avareza apenas pelo que nele há de risível, a exemplo do que
+                            fizeram Plauto e Molière, mas, também, do por seu aspecto
+                            doloroso, tomando o ponto de vista de quem o possui.
                         </p>
-                        <div class="avaliacao">
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-regular fa-star-half-stroke metade"></span>
-                            <span class="fa-regular fa-star vazia"></span>
-                        </div>
-                        <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
                     </div>
-                    <!-- Livro 3 -->
-                    <div class="card">
-                        <img src="img/capas/A-Via-Crucis-do-Corpo.jpg" alt="A via crucis do corpo" class="capa">
-                        <p class="titulolivro">A via crucis do corpo</p>
-                        <p>
-                            Clarice Lispector<br>
-                            1974<br>
-                            Edição comemorativa (2020)<br>
-                        </p>
-                        <div class="avaliacao">
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-regular fa-star-half-stroke metade"></span>
-                            <span class="fa-regular fa-star vazia"></span>
-                        </div>
-                        <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-                    </div>
-                    <!-- Livro 4 -->
-                    <div class="card">
-                        <img src="img/capas/Primeiras-Estorias.jpg" alt="Primeiras Estórias" class="capa">
-                        <p class="titulolivro">Primeiras Estórias</p>
-                        <p>
-                            João Guimarães Rosa<br>
-                            1962<br>
-                            1ª edição (2019)<br>
-                        </p>
-                        <div class="avaliacao">
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-solid fa-star completa"></span>
-                            <span class="fa-regular fa-star-half-stroke metade"></span>
-                            <span class="fa-regular fa-star vazia"></span>
-                        </div>
-                        <button class="reserva"><i class="fa-solid fa-plus"></i>Reservar</button>
-                    </div>
-                </section>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
