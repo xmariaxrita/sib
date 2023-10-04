@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Título</th>
+    <th>Autor(es)</th>
+    <th>Páginas</th>
+    <th>Editar</th>
+    <th>Excluir</th>
+  </tr>
+  <th:block th:each="livro : ${livros}">
+    <tr>
+      <td th:text="${livro.id}"></td>
+      <td th:text="${livro.title}"></td>
+      <td th:text="${livro.author}"></td>
+      <td th:text="${livro.pages}"></td>
+      <td>Editar</td>
+      <td>Excluir</td>
+    </tr>
+  </th:block>
+</table>
+</body>
+</html>
