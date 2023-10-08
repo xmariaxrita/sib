@@ -15,7 +15,6 @@
 <body>
     <main>
         <header>
-
             <div class="logo">
                 <img src="img/logo.png" alt="SIB"><span>sib</span>
             </div>
@@ -42,6 +41,7 @@
                 <button class="btn-signup">Cadastre-se</button>
             </div>
         </header>
+
         <nav>
             <a href="#"><i class="fa-solid fa-bars"></i> Minha estante</a>
             <a href="#">Acervo</a>
@@ -49,16 +49,17 @@
             <a href="#">Destaques</a>
             <a href="#">Recomendações</a>
         </nav>
-        <hr>
 
+        <hr>
+        <!-- * Recomendação do Dia -->
         <section>
-            <h2>Recomendação do Dia</h2>
+            <h2 style="text-align: center; margin-left: 0;">Recomendação do Dia</h2>
             <div class="background">
                 <div class="c-recommend">
                     <img src="img/capas/O-Santo-e-a-Porca.jpg" alt="" class="c-recommend-cover" />
                     <div class="c-recommend-info">
                         <div class="d-flex">
-                            <h3 class="c-recommend-title">O santo e a porca</h3>
+                            <h3 class="c-recommend-title" style="font-weight: 800;">O santo e a porca</h3>
                             <button class="c-recommend-reserve">
                                 <i class="fa-solid fa-plus"></i>Reservar
                             </button>
@@ -85,6 +86,451 @@
                 </div>
             </div>
         </section>
+        <!-- * Destaques -->
+        <section>
+            <div class="d-flex">
+                <h2>Destaques</h2>
+                <span class="more">Ver mais</span>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Vidas-Secas.jpg" alt="Capa do livro Vidas Secas">
+                <h3>Vidas Secas</h3>
+                <p>
+                    Graciliano Ramos, 1938<br>
+                    Record - 159ª ed. (2019)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/O-Cortico.jpg" alt="Capa do livro O cortiço">
+                <h3>O cortiço</h3>
+                <p>
+                    Aluísio Azevedo, 1890<br>
+                    Antofágica - 1ª ed. (2022)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/A-Hora-da-Estrela.jpg" alt="Capa do livro A hora da estrela">
+                <h3>A hora da estrela</h3>
+                <p>
+                    Clarice Lispector, 1977<br>
+                    Rocco - 1ª ed. (2020)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button disabled="disabled"></i>Indisponível</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Quarto-de-Despejo.jpg" alt="Capa do livro Quarto de despejo">
+                <h3>Quarto de despejo</h3>
+                <p>
+                    Carolina Maria de Jesus, 1960<br>
+                    Ática - 1ª ed. (2020)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Anos-de-Chumbo.jpg" alt="Capa do livro Anos de chumbo e outros contos">
+                <h3>Anos de chumbo e outros contos</h3>
+                <p>
+                    Chico Buarque, 2021<br>
+                    Companhia das Letras - 1ª ed.
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button disabled="disabled"></i>Indisponível</button>
+            </div>
+        </section>
+        <!-- * Livros de contos -->
+        <section>
+            <div class="d-flex">
+                <h2>Livros de contos</h2>
+                <span class="more">Ver mais</span>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/A-Via-Crucis-do-Corpo.jpg" alt="Capa do livro A via crucis do corpo">
+                <h3>A via crucis do corpo</h3>
+                <p>
+                    Clarice Lispector, 1974<br>
+                    Rocco - 1ª ed. (2020)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Feliz-Ano-Novo.jpg" alt="Capa do livro Feliz Ano Novo">
+                <h3>Feliz Ano novo</h3>
+                <p>
+                    Rubem Fonseca, 1975<br>
+                    Nova Fronteira - 11ª ed. (2021)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Morangos-Mofados.jpg" alt="">
+                <h3>Morangos Mofados</h3>
+                <p>
+                    Caio Fernando Abreu, 1982<br>
+                    Companhia da Letras - 1ª ed. (2019)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button disabled="disabled"></i>Indisponível</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Primeiras-Estorias.jpg" alt="">
+                <h3>Primeiras Estórias</h3>
+                <p>
+                    João Guimarães Rosa, 1962<br>
+                    Global Editora - 1ª ed. (2019)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/capas/Varias-Historias.jpg" alt="">
+                <h3>Várias Histórias</h3>
+                <p>
+                    Machado de Assis, 1896<br>
+                    Via Leitura - 1ª ed. (2023)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+            </div>
+        </section>
+        <!-- * Gêneros -->
+        <section>
+            <div class="d-flex">
+                <h2>Explore gêneros</h2>
+                <a class="more">Ver mais</a>
+            </div>
+            <div class="container">
+                <!-- Gênero 1 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #FE6F60 0%,  #FE4632 50%, #EF1901 100%)">
+                    <h3>Clássicos</h3>
+                    <img src="svg/classicos.svg" alt="">
+                </div>
+                <!-- Gênero 2 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #F892B6 0%,  #F673A1 50%, #F12B70 100%)">
+                    <h3>Romance</h3>
+                    <img src="svg/romance.svg" alt="">
+                </div>
+                <!-- Gênero 3 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #D7F786 0%,  #CDF564 50%, #B6F120 100%)">
+                    <h3 style="color: #000;">Comédia</h3>
+                    <img src="svg/comedia.svg" alt="">
+                </div>
+                <!-- Gênero 4 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #A686F7 0%,  #8E66F5 50%, #5B20F1 100%)">
+                    <h3>Fantasia</h3>
+                    <img src="svg/fantasia.svg" alt="">
+                </div>
+                <!-- Gênero 5 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #4E66D4 0%,  #2D46BA 50%, #233791 100%)">
+                    <h3> Mistério e crime</h3>
+                    <img src="svg/misterio.svg" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <!-- Gênero 1 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #FF8763 0%,  #ff6437 50%, #F43900 100%)">
+                    <h3>Clássicos</h3>
+                    <img src="svg/classicos.svg" alt="">
+                </div>
+                <!-- Gênero 2 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #BB4ED4 0%,  #9F2DB9 50%, #7D2391 100%)">
+                    <h3>Romance</h3>
+                    <img src="svg/romance.svg" alt="">
+                </div>
+                <!-- Gênero 3 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #60EEFE 0%,  #34EAFE 50%, #01D7EF 100%)">
+                    <h3 style="color: #000;">Comédia</h3>
+                    <img src="svg/comedia.svg" alt="">
+                </div>
+                <!-- Gênero 4 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #FF8763 0%,  #ff6437 50%, #F43900 100%)">
+                    <h3>Fantasia</h3>
+                    <img src="svg/fantasia.svg" alt="">
+                </div>
+                <!-- Gênero 5 -->
+                <div class="c-genre"
+                    style="background: linear-gradient(180deg, #4E66D4 0%,  #2D46BA 50%, #233791 100%)">
+                    <h3> Mistério e crime</h3>
+                    <img src="svg/misterio.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- *  -->
+        <section>
+            <div class="d-flex">
+                <h2>Nome da seção</h2>
+                <span class="more">Ver mais</span>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button disabled="disabled"></i>Indisponível</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+            </div>
+        </section>
+        <!-- *  -->
+        <section>
+            <div class="d-flex">
+                <h2>Nome da seção</h2>
+                <span class="more">Ver mais</span>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button disabled="disabled"></i>Indisponível</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>Nome do livro</h3>
+                <p>
+                    Autor, ano<br>
+                    Editora - nª ed. (ano)
+                </p>
+                <div class="c-bookreview">
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-solid fa-star completa"></span>
+                    <span class="fa-regular fa-star-half-stroke metade"></span>
+                    <span class="fa-regular fa-star vazia"></span>
+                </div>
+                <button class="c-btn-reserve"><i class="fa-solid fa-plus"></i>Reservar</button>
+            </div>
+            </div>
+        </section>
+
+        <footer>
+        </footer>
     </main>
 </body>
 

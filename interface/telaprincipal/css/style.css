@@ -40,22 +40,28 @@ hr {
 }
 
 section {
-  margin-top: 50px;
+  margin: 50px auto 95px;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
+  margin: 0px 0px 45px 85px;
+  text-align: left;
 }
 
 h3 {
-  font-weight: 800;
+  font-weight: bold;
 }
 
 p {
   font-weight: 600;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
 }
 
 nav a {
@@ -64,6 +70,8 @@ nav a {
   padding: 0px 90px;
   text-decoration: none;
 }
+
+
 
 .logo {
   display: flex;
@@ -76,14 +84,13 @@ nav a {
 }
 
 .d-margin {
-  margin: 0px, 10px;
+  margin: 0px, 20px;
 }
 
 .btn-icon {
-  /* TODO: Precisa organizar os botões da header */
   background: none;
   border: none;
-  margin: 0 20px;
+  margin: 0 20px 0 30px;
   font-size: 25px; /* * Tamanho do ícone */
 }
 
@@ -94,7 +101,7 @@ nav a {
   font-size: 1em;
   font-weight: 600;
   height: 39px;
-  margin: 0px 5px;
+  margin: 0 5px;
   width: 81px;
 }
 
@@ -102,10 +109,11 @@ nav a {
   background: #1ed760;
   border: none;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
   font-size: 1em;
   font-weight: bold;
   height: 39px;
+  margin: 0 5px;
   width: 144px;
 }
 
@@ -136,6 +144,7 @@ nav a {
 .c-recommend-info {
   display: inline-block;
   margin: 56.25px 10px 56.25px 0px;
+  text-align: left;
 }
 
 .d-flex {
@@ -152,8 +161,6 @@ nav a {
 .c-recommend-reserve {
   color: #ffffff;
   background-color: #000;
-  border: none;
-  border-radius: 10px;
   font-size: 1em;
   font-weight: 700;
   height: 35px;
@@ -181,6 +188,54 @@ nav a {
   width: 522px;
 }
 
+.more {
+  color: #1ed760;
+  font-weight: 600;
+  margin: 0px 0px 45px 1485px;
+  text-align: right;
+}
+
+.card {
+  background: #f7f7f8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  height: 490px;
+  margin: 0px 50px 0px;
+  text-align: center;
+  width: 255px;
+}
+
+.c-bookreview {
+  color: #fae62d;
+  justify-content: space-between;
+  margin: 3px 0px 4px 36px;
+  text-align: left;
+}
+
+.c-btn-reserve {
+  background-color: #1ed760; /* Precisa de outra cor */
+  color: #fff;
+  font-weight: bold;
+  height: 34px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 170px;
+}
+
+.c-genre {
+  border-radius: 40px;
+  display: inline-block;
+  height: 150px;
+  margin: 0 20px;
+  width: 290px;
+}
+
+.container {
+  margin: 0 auto 30px;
+}
+
 .logo img {
   height: 52px;
   width: 59.006px;
@@ -194,12 +249,68 @@ nav a {
 
 .searchbar button {
   background: none;
-  border: none;
-  border-radius: 10px;
   display: inline-block;
   font-size: 18px; /* * Tamanho do ícone */
-  margin: auto -8%;
+  margin: auto -6%;
   padding: 10px 20px;
+}
+
+.card img {
+  background-color: #000; /* TODO: remover essa cor de fundo*/
+  height: 250px;
+  margin: 38px 36px 10px;
+  width: 181.875px;
+}
+
+.card h3 {
+  font-size: 14px;
+  height: 18px;
+  margin: 10px 36px 5px 36px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  width: 180px;
+  white-space: nowrap;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 12px;
+  height: 30px;
+  margin: 3.5px 36px 10px 36px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  width: 180px;
+  white-space: nowrap;
+}
+
+button:disabled {
+  background: #808080;
+  color: #fff;
+  font-weight: bold;
+  height: 34px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 170px;
+}
+
+.c-genre h3 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 31px 0px 0px 22px;
+  text-align: left;
+}
+
+.c-genre img {
+  display: inline;
+  height: 70px;
+  margin: 10px 0px 0px 160px;
+  opacity: 0.5;
+  text-align: right;
+  width: 70px;
 }
 
 .searchbar ::placeholder {
@@ -225,5 +336,5 @@ nav a {
   border-radius: 10px;
   height: 45px;
   margin: 0 auto;
-  width: 800px;
+  width: 1050px;
 }
