@@ -40,7 +40,7 @@ hr {
 }
 
 section {
-  margin: 50px auto 95px;
+  margin: 85px auto 155px;
   text-align: center;
 }
 
@@ -64,14 +64,17 @@ button {
   border-radius: 10px;
 }
 
+footer {
+  background-color: #f8f8f8;
+  height: 585px;
+}
+
 nav a {
   color: #000;
   font-weight: 700;
   padding: 0px 90px;
   text-decoration: none;
 }
-
-
 
 .logo {
   display: flex;

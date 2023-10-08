@@ -44,7 +44,8 @@
 
         <label for="senha">Senha</label>
         <input type="password" th:value="${admin?.senha}" required id="senha" name="senha" placeholder="Insira sua senha">
-        <!-- Para textarea usa-se: th:inline="text"-->
+        <!-- Para textarea usa-se:
+                th:inline="text">[[${admin.texto}]]</textarea>> -->
 
         <button type="submit">Salvar</button>
     </form>
