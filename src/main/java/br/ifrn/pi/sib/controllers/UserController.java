@@ -15,7 +15,7 @@ public class UserController {
     @Autowired
     private UserRepo repo;
 
-    @GetMapping("/User")
+    @GetMapping("/users")
     public String index (Model model) {
         List<User> users = (List<User>) repo.findAll();
         model.addAttribute("users", users);

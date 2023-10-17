@@ -18,7 +18,7 @@ public class HomeController {
     public String index(Model model){
         List<User> Usuarios = (List<User>)repo.findAll();
         model.addAttribute("users", Usuarios);
-        return "home/index";
+        return "index";
     }
 
 }
