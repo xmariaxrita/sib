@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIB</title>
+</head>
+
+<body>
+<!--<h1>Usuário</h1>-->
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Lançamento</th>
+        <th>Classificação</th>
+        <th>Código</th>
+        <th>Editar</th>
+        <th>Excluir</th>
+
+
+
+
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each ="c : ${catalogues}">
+        <td th:text=" ${c.id}"></td>
+        <td th:text=" ${c.titulo}"></td>
+        <td th:text=" ${c.autor}"></td>
+        <td th:text=" ${c.lancamento}"></td>
+        <td th:text=" ${c.classificacao_indicativa}"></td>
+        <td th:text=" ${c.codigo}"></td>
+        <td>Editar</td>
+        <td>Excluir</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
