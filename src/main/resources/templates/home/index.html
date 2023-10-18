@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -27,17 +27,27 @@
 
         <tbody>
         <tr th:each ="user : ${users}">
-            <td th:text=" ${user.id}"></td>
+            <td></td>
             <td th:text=" ${user.cpf}"></td>
             <td th:text=" ${user.dataNascimento}"></td>
             <td th:text=" ${user.email}"></td>
             <td th:text=" ${user.idResponsavel}"></td>
             <td th:text=" ${user.nome}"></td>
-            <td th:text=" ${user.senha}"></td>
-            <td>Editar</td>
-            <td>Excluir</td>
+            <td th:text= " ${user.senha}"></td>
+            <td> <a href="#" class="btn btn-warning">Editar
+            </a>
+            </td>
+            <td>
+                <a href="#"
+                   th:onclick="if(confirm\'Confirma ?\')) {window.location.href= \''+ @{/user/List/{id}(id=${user.id})}/excluir} + '\'"
+                   class="btn btn-danger">
+                    Excluir
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
+
+
 </body>
 </html>
