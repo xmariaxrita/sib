@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Aktifo-A;
+  font-family: 'Aktifo-A';
   margin: 0;
 }
 
@@ -366,7 +366,7 @@ button:disabled {
 
 .searchbar ::placeholder {
   color: #7d7c83;
-  font-size: 0, 875em;
+  font-size: 0.875em;
   font-weight: 500;
 }
 
