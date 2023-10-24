@@ -33,11 +33,20 @@
             <td th:text=" ${user.email}"></td>
             <td th:text=" ${user.idResponsavel}"></td>
             <td th:text=" ${user.nome}"></td>
-            <td th:text=" ${user.senha}"></td>
-            <td>Editar</td>
-            <td>Excluir</td>
+
+            <td th:text= " ${user.senha}"></td>
+            <td> <a href="#" class="btn btn-warning">Editar
+            </a>
+            </td>
+            <td>
+                <a href="#" th:onclick="'if(confirm(\'Confirma?\')) {window.location.href= \''+ @{/users/{id}(id=${user.id})} + '/excluir\'}'">
+                   <button>Excluir</button>
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
+
+
 </body>
 </html>
