@@ -27,7 +27,7 @@
 
         <tbody>
         <tr th:each ="user : ${users}">
-            <td></td>
+            <td th:text=" ${user.id}"></td>
             <td th:text=" ${user.cpf}"></td>
             <td th:text=" ${user.dataNascimento}"></td>
             <td th:text=" ${user.email}"></td>
@@ -38,10 +38,8 @@
             </a>
             </td>
             <td>
-                <a href="#"
-                   th:onclick="if(confirm\'Confirma ?\')) {window.location.href= \''+ @{/user/List/{id}(id=${user.id})}/excluir} + '\'"
-                   class="btn btn-danger">
-                    Excluir
+                <a href="#" th:onclick="'if(confirm(\'Confirma?\')) {window.location.href= \''+ @{/users/{id}(id=${user.id})} + '/excluir\'}'">
+                   <button>Excluir</button>
                 </a>
             </td>
         </tr>
