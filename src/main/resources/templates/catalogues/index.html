@@ -30,6 +30,11 @@
     </thead>
 
     <tbody>
+
+
+    </tbody>
+
+    <tbody>
     <tr th:each ="c : ${catalogues}">
         <td th:text=" ${c.id}"></td>
         <td th:text=" ${c.titulo}"></td>
@@ -38,7 +43,12 @@
         <td th:text=" ${c.classificacao_indicativa}"></td>
         <td th:text=" ${c.codigo}"></td>
         <td>Editar</td>
-        <td>Excluir</td>
+        <td> <a href="#"
+                th:onclick="'if(confirm(\'Confirma?\')) {window.location.href = \'' + @{/catalogues/{id}(id=${c.id})} + '/excluir\'}'"
+                class="btn btn-danger">
+            Excluir
+        </a>
+        </td>
     </tr>
     </tbody>
 </table>
