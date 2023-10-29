@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e54f53af-55f7-4131-99df-4301bb48c74b" name="Changes" comment="Exclusão da 1ª versão da tela inicial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" afterDir="false" />
     </list>
@@ -28,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="tela-cadastro-usuario" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +52,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -73,6 +70,10 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -90,7 +91,7 @@
       <recent name="br.ifrn.pi.sib.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SibApplication">
+  <component name="RunManager" selected="Spring Boot.SibApplication">
     <configuration name="SibApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ifrn.pi.sib.SibApplication" />
       <module name="sib" />
@@ -126,6 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696969048397</updated>
       <workItem from="1696969049233" duration="2405000" />
+      <workItem from="1698402025783" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="Reenvio dos arquivos">
       <option name="closed" value="true" />
