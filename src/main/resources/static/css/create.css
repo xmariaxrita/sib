@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Aktifo-A';
+  margin: 0;
+}
+
+svg {
+  display: block;
+  margin: 5% auto 0;
+}
+
+form {
+  border: #000 solid 2px;
+  border-radius: 10px;
+  height: 650px;
+  margin: auto;
+  width: 475px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 74px 0 46px;
+  text-align: center;
+}
+
+div {
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  margin: 25px auto;
+  width: 300px;
+}
+
+input {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  font-weight: 600;
+  height: 45px;
+  margin-left: 2px;
+  padding-left: 10px;
+  width: 250px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 26px;
+  text-align: center;
+}
+
+a {
+  color: #1ED760;
+  font-weight: 800;
+}
+
+button {
+  display: inline-block;
+}
+
+.btn-create {
+  background-color: #1ed760;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+  height: 50px;
+  margin: 46px auto 0;
+  width: 295px;
+}
+
+.btn-password {
+  align-items: center;
+  background: none;
+  border: none;
+  display: flex;
+  /* height: 45px; */
+  /* margin-left: -50px; */
+}
+
+.fa-eye::before {
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: #7d7c83;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}

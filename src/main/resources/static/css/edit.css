@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: "Aktifo-A";
+  margin: 0;
+}
+
+svg {
+  display: block;
+  margin: 5% auto 0;
+}
+
+form {
+  border: #000 solid 2px;
+  border-radius: 10px;
+  height: 1250px;
+  margin: auto;
+  width: 925px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 74px;
+  text-align: center;
+}
+
+p {
+  color: #636369;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 10px 0 46px;
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  margin: 25px 150px;
+}
+
+label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+input,
+select {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  font-weight: 600;
+  height: 45px;
+  margin-top: 13px;
+  padding: 0 10px;
+  width: 600px;
+}
+
+fieldset {
+  border: none;
+  border-radius: 10px;
+  border-top: 2px solid #000;
+  margin: 40px 0;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 30px 100px;
+}
+
+button {
+  background-color: #1ed760;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  float: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  height: 50px;
+  margin: 40px 50px 0 0  ;
+  width: 190px;
+}
+
+.d-flex {
+  display: flex;
+  margin: 0;
+}
+
+#txtCep,
+#txtEstados {
+  display: flex;
+  width: 250px;
+}
+
+input::placeholder {
+  color: #7d7c83;
+  font-size: 0.875em;
+  font-weight: 500;
+}
