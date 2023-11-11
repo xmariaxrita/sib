@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Aktifo-A';
+  font-family: "Aktifo-A";
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ svg {
 form {
   border: #000 solid 2px;
   border-radius: 10px;
-  height: 650px;
+  height: 740px;
   margin: auto;
   width: 475px;
 }
@@ -25,39 +25,43 @@ h2 {
 }
 
 div {
-  border: 2px solid #000;
-  border-radius: 10px;
-  display: flex;
-  margin: 25px auto;
-  width: 300px;
+  display: inline-block;
+  margin: 15px 85px;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  /* margin: auto; */
 }
 
 input {
   background-color: #fff;
-  border: none;
+  border: 2px solid #000;
   border-radius: 10px;
-  display: flex;
   font-weight: 600;
   height: 45px;
-  margin-left: 2px;
   padding-left: 10px;
-  width: 250px;
+  width: 300px;
 }
 
 p {
   font-size: 12px;
   font-weight: 500;
-  margin-top: 26px;
-  text-align: center;
 }
 
 a {
-  color: #1ED760;
+  color: #1ed760;
   font-weight: 800;
 }
 
 button {
   display: inline-block;
+}
+
+i {
+  font-size: 20px;
 }
 
 .btn-create {
@@ -69,7 +73,7 @@ button {
   font-weight: bold;
   font-size: 1.5em;
   height: 50px;
-  margin: 46px auto 0;
+  margin: 35px auto 0;
   width: 295px;
 }
 
@@ -77,23 +81,17 @@ button {
   align-items: center;
   background: none;
   border: none;
-  display: flex;
-  /* height: 45px; */
-  /* margin-left: -50px; */
-}
-
-.fa-eye::before {
-  font-size: 20px;
-}
-
-input::placeholder {
-  color: #7d7c83;
-  font-size: 0.875em;
-  font-weight: 500;
+  display: inline;
+  margin-left: -50px;
 }
 
 textarea:focus,
 input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
+}
+
+#error-message {
+  margin: 0px 85px;
+  text-align: left;
 }

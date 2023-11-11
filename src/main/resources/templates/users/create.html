@@ -8,6 +8,7 @@
   <title>Cadastre-se • SIB</title>
   <link rel="stylesheet" href="/css/create.css">
   <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 
 <body>
@@ -46,28 +47,34 @@
   <form method="post" action="/users/salvar">
     <h2>Crie sua conta</h2>
     <div>
-      <input type="email" name="email" id="txtEmail" placeholder="E-mail" required>
+      <label for="txtEmail">E-mail</label>
+      <input type="email" name="email" id="txtEmail" required>
     </div>
     <div>
-      <input type="text" name="nome" id="txtUser" placeholder="Nome de usuário" required>
+      <label for="txtUser">Nome de usuário</label>
+      <input type="text" name="nome" id="txtUser" required>
     </div>
     <div>
-      <input type="password" name="senha" id="txtSenha" placeholder="Senha" required>
-      <button type="button" class="btn-password" onclick="mostrarSenha()">
-        <img src="svg/eye.svg" alt="">
+      <label for="txtSenha">Senha</label>
+      <input type="password" name="senha" id="txtSenha" required>
+      <button type="button" class="btn-password" id="mostrarSenha">
+        <i class="far fa-eye" id="visibilidadeIcon"></i>
       </button>
     </div>
     <div>
-      <input type="password" name="senhaC" id="txtSenhaC" placeholder="Confirme sua senha" required>
-      <button type="button" class="btn-password" onclick="mostrarSenhaC()">
-        <img src="svg/eye.svg" alt="">
+      <label for="txtSenhaC">Confirme sua senha</label>
+      <input type="password" name="senhaC" id="txtSenhaC" required>
+      <button type="button" class="btn-password" id="mostrarSenhaC">
+        <i class="far fa-eye" id="visibilidadeIconC"></i>
       </button>
     </div>
-    <button type="submit" class="btn-create">Criar conta</button>
-    <p>Já tem uma conta? <a href="">Login</a></p>
+    <p id="error-message" style="color: red; height: 30px;"></p>
+    <button type="submit" class="btn-create" onclick="confirmarSenha()">Criar conta</button>
+    <p style="margin-top: 26px;
+    text-align: center;">Já tem uma conta? <a href="">Login</a></p>
   </form>
 
-  <script src="js/create.js"></script>
+  <script src="/js/create.js"></script>
 
 </body>
 

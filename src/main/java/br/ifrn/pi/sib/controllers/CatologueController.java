@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -25,7 +24,7 @@ public class CatologueController {
     }
 
     @GetMapping("/catalogues/{id}/excluir")
-    public String excluir(@PathVariable int id ){
+    public String excluir(@PathVariable int id){
         repo.deleteById(id);
         return "redirect:/catalogues";
 
