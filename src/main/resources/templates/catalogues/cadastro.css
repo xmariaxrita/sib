@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-family: "Aktifo-A";
+  margin: 0;
+}
+
+svg {
+  display: block;
+  margin: 5% auto 0;
+}
+
+form {
+  border: #000 solid 2px;
+  border-radius: 10px;
+  height: 2786px;
+  margin: auto;
+  width: 1241px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 74px 0 46px;
+  text-align: center;
+}
+
+div {
+  margin: 15px 85px;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  /* margin: auto; */
+}
+
+/* input {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-weight: 600;
+  height: 45px;
+  padding-left: 10px;
+  width: 300px;
+} */
+
+p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+a {
+  color: #1ed760;
+  font-weight: 800;
+}
