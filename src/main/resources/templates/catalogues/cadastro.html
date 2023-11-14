@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+</head>
+
+<body>
+    <form>
+        <h2>Cadastro de livros</h2>
+
+        <div>
+            <p>É muito importante que as informações sejam preenchidas corretamente. Caso tenha <br>
+                alguma dúvida, pode tentar tirá-la em sites de livrarias, ou no Google.</p>
+            <p>Preenchimento obrigatório</p>
+        </div>
+
+        <div>
+            <!-- <label for="capa">Capa</label> -->
+            <input type="file" name="capa" id="capa" multiple>
+        </div>
+        <div>
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="titulo" required>
+        </div>
+
+        <div>
+            <label for="autor">Autor(es)</label>
+            <input type="text" name="autores" id="autor" required>
+        </div>
+
+        <div>
+            <label for="colecao">Série/Coleção</label>
+            <input type="text" name="colecao" id="colecao" required>
+        </div>
+
+        <div>
+            <label for="volume">Volume</label>
+            <input type="number" name="volume" id="volume" required>
+        </div>
+
+        <div>
+            <label for="editora">Editora</label>
+            <input type="text" name="editora" id="editora" required>
+        </div>
+
+        <div>
+            <label for="lancamento">Ano da 1ª publicação</label>
+            <input type="number" name="lancamento" id="lancamento" required>
+        </div>
+
+        <div>
+            <label for="edicao">Edição</label>
+            <input type="number" name="edicao" id="edicao" required>
+        </div>
+
+        <div>
+            <label for="anoEdicao">Ano da edição</label>
+            <input type="number" name="anoEdicao" id="anoEdicao" required>
+        </div>
+
+        <div>
+            <label for="nPaginas">Nº de páginas</label>
+            <input type="number" name="nPaginas" id="nPaginas" required>
+        </div>
+
+        <div>
+            <label for="classificacao_indicativa">Classificção indicativa</label>
+            <select name="classificacao" id="classificacao_indicativa">
+                <option value="0">Livre (L)</option>
+                <option value="1">Para maiores de 10 anos (+10)</option>
+                <option value="2">Para maiores de 12 anos (+12)</option>
+                <option value="3">Para maiores de 14 anos (+14)</option>
+                <option value="4">Para maiores de 16 anos (+16)</option>
+                <option value="5">Para maiores de 18 anos (+18)</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="generos">Gêneros</label>
+            <select name="generos" id="generos">
+                <option value="classico">Clássico</option>
+                <option value="romance">Romance</option>
+                <option value="comedia">Comédia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="isbn10">ISBN-10</label>
+            <input type="text" name="isbn10" id="isbn10" required>
+        </div>
+
+        <div>
+            <label for="isbn13">ISBN-13</label>
+            <input type="text" name="isbn13" id="isbn13" required>
+        </div>
+
+        <div>
+            <label for="nCopias">Nº de cópias do acervo</label>
+            <input type="number" name="nCopias" id="nCopias" required>
+        </div>
+
+        <div>
+            <label for="sinospe">Sinopse</label>
+            <textarea name="sinopse" id="sinopse" cols="30" rows="10" maxlength="2000"></textarea>
+        </div>
+        <div>
+            <label for="materialAtual">Estado atual do material</label>
+            <input type="file" name="materialAtual" id="materialAtual" multiple>
+        </div>
+        <div>
+            <input type="checkbox" name="livroEmprestimo" id="livroEmprestimo" multiple>
+            <label for="materialAtual">Livro disponível para empréstimo</label>
+        </div>
+        <div>
+            <input type="checkbox" name="doador" id="doador" multiple>
+            <label for="doador">Livro doado</label>
+        </div>
+    </form>
+</body>
+
+</html>
