@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Livros ao Acervo</title>
+</head>
+<body>
+<form action="processar_formulario.php" method="post">
+<label for="id">ID:</label>
+<input type="text" id="id" name="id" required><br>
+
+<label for="titulo">Título:</label>
+<input type="text" id="titulo" name="titulo" required><br>
+
+<label for="autor">Autor:</label>
+<input type="text" id="autor" name="autor" required><br>
+
+<label for="lancamento">Lançamento:</label>
+<input type="date" id="lancamento" name="lancamento" required><br>
+
+<label for="classificacao">Classificação:</label>
+<select id="classificacao" name="classificacao" required>
+  <option value="Livre">Livre</option>
+  <option value="10+">10+</option>
+  <option value="12+">12+</option>
+  <option value="14+">14+</option>
+  <option value="16+">16+</option>
+  <option value="18+">18+</option>
+</select><br>
+
+<label for="codigo">Código:</label>
+<input type="text" id="codigo" name="codigo" required><br>
+
+<input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>

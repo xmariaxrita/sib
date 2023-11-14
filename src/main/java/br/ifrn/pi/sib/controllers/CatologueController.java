@@ -30,5 +30,10 @@ public class CatologueController {
 
     }
 
+    @GetMapping("/catalogues/add")
+    public String novo(Model model){
+        return "catalogues/add";
+    }
+
 
 }
