@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -30,5 +31,15 @@ public class CatologueController {
 
     }
 
+    @GetMapping("/catalogues/add")
+    public String add(){
+        return "catalogues/add";
+    }
+
+    @PostMapping("/catalogues/save")
+    public String novo(Catalogue catalogue){
+        repo.save(catalogue);
+        return "redirect:/catalogues";
+    }
 
 }

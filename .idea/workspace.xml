@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/catalogues/add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/CatologueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/CatologueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/create.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/create.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/catalogues/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/catalogues/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +51,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -86,6 +83,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -94,7 +94,7 @@
       <recent name="br.ifrn.pi.sib.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SibApplication">
+  <component name="RunManager" selected="Application.SibApplication">
     <configuration name="SibApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ifrn.pi.sib.SibApplication" />
       <module name="sib" />
@@ -125,7 +125,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e54f53af-55f7-4131-99df-4301bb48c74b" name="Changes" comment="" />
+      <changelist id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="" />
       <created>1696969048397</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

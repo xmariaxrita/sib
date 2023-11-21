@@ -2,6 +2,7 @@ package br.ifrn.pi.sib.models;
 
 
 import jakarta.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -20,6 +21,7 @@ public class Catalogue {
     private int classificacao_indicativa;
 
     @Column(name="lancamento")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date lancamento;
 
     @Column(name="titulo")
