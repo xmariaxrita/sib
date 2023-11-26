@@ -46,27 +46,29 @@
   <form>
     <h2>Cadastro de livros</h2>
 
-    <div>
-      <p>
-        É muito importante que as informações sejam preenchidas corretamente.
-        Caso tenha <br>
-        alguma dúvida, pode tentar tirá-la em sites de livrarias, ou no
-        Google.
-      </p>
-      <p>Preenchimento obrigatório</p>
+    <div class="card-info">
+      <i class="fas fa-info"></i>
+      <div class="c-info-texto">
+        <p class="info-azul">
+          É muito importante que as informações sejam preenchidas corretamente.
+          Caso tenha alguma dúvida, pode tentar tirá-la em sites de livrarias, ou no
+          Google.
+        </p>
+        <p class="info-vermelho">* Preenchimento obrigatório</p>
+      </div>
     </div>
-
     <div>
       <!-- <label for="capa">Capa</label> -->
-      <input type="file" name="capa" id="imgCapa" accept="image/*">
+      <input type="file"  name="capa" id="imgCapa" accept="image/png, image/jpeg">
+      <!-- <img id="imagePreview" alt="Visualização de imagem"> -->
     </div>
     <div>
-      <label for="txtTitulo">Título</label>
+      <label for="txtTitulo">Título<b>*</b></label>
       <input type="text" name="titulo" id="txtTitulo" placeholder="Insira o título do livro" required>
     </div>
 
     <div>
-      <label for="txtAutor">Autor(es)</label>
+      <label for="txtAutor">Autor(es)<b>*</b></label>
       <input type="text" name="autor" id="txtAutor" placeholder="Insira o(s) nome(s) do(s) autor(es) do livro" required>
     </div>
 
@@ -77,36 +79,36 @@
 
     <div>
       <label for="txtVolume">Volume</label>
-      <input type="number" min = "1" name="volume" id="txtVolume">
+      <input type="number" min="1" name="volume" id="txtVolume">
     </div>
 
     <div>
-      <label for="txtEditora">Editora</label>
+      <label for="txtEditora">Editora<b>*</b></label>
       <input type="text" name="editora" id="txtEditora" required placeholder="Insira o nome da editora do livro">
     </div>
 
     <div>
-      <label for="txtAno1">Ano da 1ª publicação</label>
-      <input type="number" min = "0" name="lancamento" id="txtAno1" required>
+      <label for="txtAno1">Ano da 1ª publicação<b>*</b></label>
+      <input type="number" min="0" name="lancamento" id="txtAno1" required>
     </div>
 
     <div>
-      <label for="txtEdicao">Edição</label>
-      <input type="number" min = "0" name="edicao" id="txtEdicao" required>
+      <label for="txtEdicao">Edição<b>*</b></label>
+      <input type="number" min="0" name="edicao" id="txtEdicao" required>
     </div>
 
     <div>
-      <label for="txtAnoEdicao">Ano da edição</label>
-      <input type="number" min = "0" name="anoEdicao" id="txtAnoEdicao" required>
+      <label for="txtAnoEdicao">Ano da edição<b>*</b></label>
+      <input type="number" min="0" name="anoEdicao" id="txtAnoEdicao" required>
     </div>
 
     <div>
-      <label for="txtNumPaginas">Nº de páginas</label>
-      <input type="number" min = "1" name="txtNumPaginas" id="txtNumPaginas" required>
+      <label for="txtNumPaginas">Nº de páginas<b>*</b></label>
+      <input type="number" min="1" name="txtNumPaginas" id="txtNumPaginas" required>
     </div>
 
     <div>
-      <label for="classficacaoIndicativa">Classificção indicativa</label>
+      <label for="classficacaoIndicativa">Classificção indicativa<b>*</b></label>
       <select name="classificacao_indicativa" id="classficacaoIndicativa" required>
         <option value="" disabled selected hidden>Selecione a classificação indicativa do livro</option>
         <option value="0">Livre (L)</option>
@@ -119,7 +121,7 @@
     </div>
 
     <div>
-      <label for="generos">Gênero</label>
+      <label for="generos">Gênero<b>*</b></label>
       <select name="genero" id="generos" required>
         <option value="" disabled selected hidden>Selecione o gênero do livro</option>
         <option value="classico">Clássico</option>
@@ -129,26 +131,29 @@
     </div>
 
     <div>
-      <label for="txtIsbn10">ISBN-10</label>
-      <input type="text" name="isbn10" id="txtIsbn10" pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}-[0-9]{1}" placeholder="Insira o ISBN-10 do livro" required>
+      <label for="txtIsbn10">ISBN-10<b>*</b></label>
+      <input type="text" name="isbn10" id="txtIsbn10" pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}-[0-9]{1}"
+        placeholder="Insira o ISBN-10 do livro" required>
     </div>
 
     <div>
-      <label for="txtIsbn13">ISBN-13</label>
-      <input type="text" name="isbn13" id="txtIsbn13" placeholder="Insira o ISBN-13 do livro" pattern="[0-9]{3}-[0-9]{1}-[0-9]{4}-[0-9]{4}-[0-9]{1}" required>
+      <label for="txtIsbn13">ISBN-13<b>*</b></label>
+      <input type="text" name="isbn13" id="txtIsbn13" placeholder="Insira o ISBN-13 do livro"
+        pattern="[0-9]{3}-[0-9]{1}-[0-9]{4}-[0-9]{4}-[0-9]{1}" required>
     </div>
 
     <div>
-      <label for="txtCopias">Nº de cópias do acervo</label>
-      <input type="number" min = "1" name="copias" id="txtCopias" required>
+      <label for="txtCopias">Nº de cópias do acervo<b>*</b></label>
+      <input type="number" min="1" name="copias" id="txtCopias" required>
     </div>
 
     <div>
       <label for="txtSinospe">Sinopse</label>
-      <textarea name="sinopse" id="txtSinospe" cols="30" rows="10" maxlength="2000" placeholder="Insira a sinopse do livro"></textarea>
+      <textarea name="sinopse" id="txtSinospe" cols="30" rows="10" maxlength="2000"
+        placeholder="Insira a sinopse do livro"></textarea>
     </div>
     <div>
-      <label for="imgEstadoMaterial">Estado atual do material</label>
+      <label for="imgEstadoMaterial">Estado atual do material<b>*</b></label>
       <input type="file" name="estadoMaterial" id="imgEstadoMaterial" required accept="image/*" multiple>
     </div>
     <div>
@@ -162,6 +167,7 @@
     <a href="http://"><button type="button">Cancelar</button></a>
     <button type="submit">Salvar</button>
   </form>
+  <script src="registration.js"></script>
 </body>
 
 </html>

@@ -35,6 +35,10 @@ label {
   /* margin: auto; */
 }
 
+b {
+  color: #FE4632;
+}
+
 /* input {
   background-color: #fff;
   border: 2px solid #000;
@@ -46,11 +50,44 @@ label {
 } */
 
 p {
-  font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a {
   color: #1ed760;
   font-weight: 800;
+}
+
+.card-info {
+  background-color: #eaedfa;
+  border-radius: 10px;
+  display: flex;
+  height: 150px;
+  margin: auto;
+  width: 865px;
+}
+
+.fa-info {
+  color: #2d46ba;
+  font-size: 68px;
+  height: 68px;
+  margin: 41px 40px;
+  text-align: center;
+  width: 68px;
+}
+
+.c-info-texto {
+  display: inline-block;
+  margin: 0;
+  width: 684px;
+}
+
+.info-azul {
+  color: #2d46ba;
+  margin: 37px 0 18px;
+}
+
+.info-vermelho {
+  color: #FE4632;
+  margin-bottom: 35px;
 }

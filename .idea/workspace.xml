@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/CatologueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/CatologueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/create.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/create.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +74,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/marcelo/Documents/projects/spring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -125,13 +119,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e54f53af-55f7-4131-99df-4301bb48c74b" name="Changes" comment="" />
+      <changelist id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="" />
       <created>1696969048397</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696969048397</updated>
       <workItem from="1696969049233" duration="2405000" />
       <workItem from="1698402025783" duration="26000" />
+      <workItem from="1700717039058" duration="325000" />
+      <workItem from="1700717369497" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="Reenvio dos arquivos">
       <option name="closed" value="true" />
