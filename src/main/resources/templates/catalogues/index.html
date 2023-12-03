@@ -48,8 +48,7 @@
 
         <td>Editar</td>
         <td> <a href="#"
-                th:onclick="'if(confirm(\'Confirma?\')) {window.location.href = \'' + @{/catalogues/{id}(id=${c.id})} + '/excluir\'}'"
-                class="btn btn-danger">
+                th:onclick="'if(confirm(\'Confirma?\')) {window.location.href = \'' + @{/catalogues/{id}(id=${c.id})} + '/excluir\'}'">
             Excluir
         </a>
         </td>

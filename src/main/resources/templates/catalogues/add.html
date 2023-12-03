@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="UTF-8">
@@ -43,7 +43,7 @@
     <path d="M39.0363 20.1643L46.0048 17.4866L47.1662 20.3335L40.1977 23.0112L39.0363 20.1643Z" fill="#A49404" />
   </svg>
 
-  <form>
+  <form action="/catalogues/save" method="post" onsubmit="return confirm('Confirma a ação?')">
     <h2>Cadastro de livros</h2>
 
     <div class="card-info">
@@ -99,8 +99,8 @@
 
     <div class="d-flex inline" style="margin: 0;">
       <div style="margin-left: 85px;">
-        <label for="txtAno1">1ª publicação<b>*</b></label>
-        <input type="number" min="0" name="lancamento" id="txtAno1" class="num" required>
+        <label for="lancamento">1ª publicação<b>*</b></label>
+        <input type="number" name="lancamento" id="lancamento" class="num" required>
       </div>
 
       <div>
@@ -167,22 +167,22 @@
       <label class="img material" for="estadoCapa" tabIndex="0">
         <span class="estadoCapa"></span>
       </label>
-      <input type="file" name="estadoCapa" id="estadoCapa" accept="image/png, image/jpeg" required>
+      <input type="file" name="estadoCapa" id="estadoCapa" accept="image/png, image/jpeg">
 
       <label class="img material" for="estadoContracapa" tabIndex="0">
         <span class="estadoContracapa"></span>
       </label>
-      <input type="file" name="estadoContracapa" id="estadoContracapa" accept="image/png, image/jpeg" required>
+      <input type="file" name="estadoContracapa" id="estadoContracapa" accept="image/png, image/jpeg">
 
       <label class="img material" for="estadoLombada" tabIndex="0">
         <span class="estadoLombada"></span>
       </label>
-      <input type="file" name="estadoLombada" id="estadoLombada" accept="image/png, image/jpeg" required>
+      <input type="file" name="estadoLombada" id="estadoLombada" accept="image/png, image/jpeg">
 
       <label class="img material" for="estadoMiolo" tabIndex="0">
         <span class="estadoMiolo"></span>
       </label>
-      <input type="file" name="estadoMiolo" id="estadoMiolo" accept="image/png, image/jpeg" required>
+      <input type="file" name="estadoMiolo" id="estadoMiolo" accept="image/png, image/jpeg">
 
     </fieldset>
     <p class="info-azul out"><i class="fas fa-circle-info"></i>Cada arquivo deve ser PNG ou JPG e ter até 10MB
