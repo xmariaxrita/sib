@@ -9,6 +9,9 @@
 </head>
 
 <body>
+
+<a href="catalogues/add">Adicione um novo livro ao sistema</a>
+
 <!--<h1>Usuário</h1>-->
 <table>
     <thead>
@@ -42,6 +45,7 @@
         <td th:text=" ${c.lancamento}"></td>
         <td th:text=" ${c.classificacao_indicativa}"></td>
         <td th:text=" ${c.codigo}"></td>
+
         <td>Editar</td>
         <td> <a href="#"
                 th:onclick="'if(confirm(\'Confirma?\')) {window.location.href = \'' + @{/catalogues/{id}(id=${c.id})} + '/excluir\'}'"
