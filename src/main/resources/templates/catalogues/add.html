@@ -1,36 +1,206 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Adicionar Livros ao Acervo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Livros • SIB</title>
+  <link rel="stylesheet" href="/css/add.css">
+  <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
+
 <body>
-<form action="/catalogues/save" method="post" onsubmit="return confirm('Confirma a ação?')">
-    <label for="titulo">Título:</label>
-    <input type="text" id="titulo" name="titulo" required><br>
+  <svg width="135" height="35" viewBox="0 0 152 52" fill="none" xmlns="http://www.w3.org/2000/svg"
+    style="margin-bottom: 16px">
+    <path
+      d="M77.9376 39.8477H84.9574C85.0237 40.943 85.4884 41.7976 86.3514 42.4116C87.2143 43.0091 88.3511 43.3078 89.7617 43.3078C91.0395 43.3078 92.0269 43.0671 92.7239 42.5859C93.4375 42.088 93.7943 41.4159 93.7943 40.5696C93.7943 39.8228 93.5371 39.2337 93.0226 38.8022C92.5248 38.3707 91.861 38.1052 91.0312 38.0056L86.4011 37.2588C83.7625 36.8108 81.7213 35.9395 80.2775 34.6451C78.8503 33.3507 78.1367 31.6497 78.1367 29.5421C78.1367 26.9366 79.1573 24.8456 81.1985 23.2691C83.2564 21.676 85.9531 20.8794 89.2887 20.8794C92.6409 20.8794 95.3542 21.6594 97.4286 23.2193C99.503 24.7627 100.565 26.8205 100.615 29.3927H93.9436C93.8773 28.397 93.4375 27.6253 92.6243 27.0777C91.8112 26.5135 90.7408 26.2313 89.4132 26.2313C88.2515 26.2313 87.3222 26.472 86.6252 26.9532C85.9282 27.4345 85.5797 28.0817 85.5797 28.8949C85.5797 29.6251 85.8452 30.1644 86.3762 30.5129C86.9073 30.8614 87.679 31.102 88.6913 31.2348L93.6947 32.0562C96.2006 32.4545 98.0924 33.3341 99.3703 34.6949C100.648 36.0391 101.287 37.7401 101.287 39.7979C101.287 42.5029 100.233 44.6769 98.1256 46.3198C96.018 47.9461 93.2301 48.7593 89.7617 48.7593C86.2103 48.7593 83.3725 47.9461 81.2483 46.3198C79.091 44.6603 77.9874 42.5029 77.9376 39.8477Z"
+      fill="black" />
+    <path
+      d="M105.27 13.088C105.27 11.8433 105.718 10.831 106.614 10.051C107.527 9.25447 108.747 8.85618 110.273 8.85618C111.8 8.85618 113.012 9.25447 113.908 10.051C114.804 10.831 115.252 11.8433 115.252 13.088C115.252 14.3658 114.804 15.4113 113.908 16.2244C113.012 17.021 111.8 17.4193 110.273 17.4193C108.747 17.4193 107.527 17.0127 106.614 16.1996C105.718 15.3864 105.27 14.3492 105.27 13.088ZM106.539 21.4021H114.032V48.2614H106.539V21.4021Z"
+      fill="black" />
+    <path
+      d="M151.222 34.7447C151.222 38.9432 149.961 42.3287 147.438 44.9009C144.932 47.4732 141.638 48.7593 137.556 48.7593C135.415 48.7593 133.482 48.4025 131.756 47.6889C130.03 46.9753 128.719 45.9962 127.823 44.7516L127.25 48.2614H120.678V10.0261H128.221V24.8125C129.15 23.5844 130.478 22.6219 132.204 21.9249C133.93 21.2279 135.846 20.8794 137.954 20.8794C141.904 20.8794 145.098 22.1572 147.538 24.7129C149.994 27.2685 151.222 30.6125 151.222 34.7447ZM143.63 34.7447C143.63 32.4213 142.941 30.571 141.564 29.1936C140.186 27.7996 138.327 27.1026 135.988 27.1026C133.664 27.1026 131.789 27.783 130.362 29.1438C128.935 30.5046 128.221 32.3384 128.221 34.6451V35.1678C128.221 37.3916 128.935 39.1839 130.362 40.5447C131.789 41.8889 133.664 42.561 135.988 42.561C138.261 42.561 140.103 41.8474 141.514 40.4202C142.924 38.9764 143.63 37.0846 143.63 34.7447Z"
+      fill="black" />
+    <path
+      d="M0 15.1918C0 14.4879 0.570617 13.9173 1.27451 13.9173H9.08836C9.79225 13.9173 10.3629 14.4879 10.3629 15.1918V50.7255C10.3629 51.4294 9.79225 52 9.08836 52H1.27451C0.570619 52 0 51.4294 0 50.7255V15.1918Z"
+      fill="#FE4632" />
+    <path d="M0 21.2555H10.3629V23.128H0V21.2555Z" fill="#AE1201" />
+    <path d="M0 44.7883H10.3629V46.6608H0V44.7883Z" fill="#AE1201" />
+    <path
+      d="M10.3629 1.27451C10.3629 0.570618 10.9335 0 11.6374 0H23.5964C24.3003 0 24.8709 0.570617 24.8709 1.27451V50.6749C24.8709 51.3788 24.3003 51.9494 23.5964 51.9494H11.6374C10.9335 51.9494 10.3629 51.3788 10.3629 50.6749V1.27451Z"
+      fill="#1ED760" />
+    <path d="M12.6945 8.35036H22.6947V12.399H12.6945V8.35036Z" fill="#117B36" />
+    <path
+      d="M24.8709 11.6492C24.8709 10.9453 25.4415 10.3747 26.1454 10.3747H34.9955C35.6994 10.3747 36.27 10.9453 36.27 11.6492V50.599C36.27 51.3029 35.6994 51.8735 34.9955 51.8735H26.1454C25.4415 51.8735 24.8709 51.3029 24.8709 50.599V11.6492Z"
+      fill="#2D46BA" />
+    <path d="M24.8709 43.5231H36.27V46.0535H24.8709V43.5231Z" fill="#1A2869" />
+    <path d="M24.8709 18.7251H36.27V21.2555H24.8709V18.7251Z" fill="#1A2869" />
+    <path
+      d="M35.9738 16.6907C35.7082 16.0388 36.0254 15.3055 36.6824 15.0528L44.3652 12.0975C45.0222 11.8448 45.7701 12.1684 46.0358 12.8202L59.9308 46.9167C60.1964 47.5685 59.8792 48.3018 59.2222 48.5546L51.5394 51.5099C50.8824 51.7626 50.1345 51.439 49.8688 50.7871L35.9738 16.6907Z"
+      fill="#FAE62D" />
+    <path d="M39.0363 20.1643L46.0048 17.4866L47.1662 20.3335L40.1977 23.0112L39.0363 20.1643Z" fill="#A49404" />
+  </svg>
 
-    <label for="autor">Autor:</label>
-    <input type="text" id="autor" name="autor" required><br>
+  <form>
+    <h2>Cadastro de livros</h2>
 
-    <label for="lancamento">Lançamento:</label>
-    <input type="text" id="lancamento" name="lancamento" required><br>
+    <div class="card-info">
+      <i class="fas fa-circle-info"
+        style="color: #2d46ba; font-size: 68px; height: 68px; margin: 41px 40px; text-align: center; width: 68px;"></i>
+      <div class="c-info-texto">
+        <p class="c-info-azul">
+          É muito importante que as informações sejam preenchidas corretamente.
+          Caso tenha alguma dúvida, pode tentar tirá-la em sites de livrarias, ou no
+          Google.
+        </p>
+        <p class="c-info-vermelho">* Preenchimento obrigatório</p>
+      </div>
+    </div>
+    <div class="d-flex" style="align-items: center;">
+      <div style="margin: 0;">
+        <label class="img capa" for="imgCapa" tabIndex="0">
+          <span class="imgCapa"></span>
+        </label>
+        <input type="file" name="imgCapa" id="imgCapa" accept="image/png, image/jpeg">
+        <p class="info-azul"><i class="fas fa-circle-info"></i>Somente arquivos PNG e JPG de até
+          10MB</p>
+      </div>
+      <div class="container" style="margin: 0;">
+        <div>
+          <label for="txtTitulo">Título<b>*</b></label>
+          <input type="text" name="titulo" id="txtTitulo" placeholder="Insira o título do livro" required autofocus>
+        </div>
+        <div>
+          <label for="txtAutor">Autor(es)<b>*</b></label>
+          <input type="text" name="autor" id="txtAutor" placeholder="Insira o(s) nome(s) do(s) autor(es) do livro"
+            required>
+          <p class="info-azul"><i class="fas fa-circle-info"></i>Para mais de um autor, use vírgula.</p>
+        </div>
+        <div class="d-flex" style="margin: 0;">
+          <div style="margin-right: 0px;">
+            <label for="txtColecao">Série/Coleção</label>
+            <input type="text" name="colecao" id="txtColecao"
+              placeholder="Insira a série ou coleção que o livro pertence" style="width: 550px;">
+          </div>
+          <div style="margin-left: 30px;">
+            <label for="txtVolume">Volume</label>
+            <input type="number" min="1" name="volume" id="txtVolume" style="width: 100px;">
+          </div>
+        </div>
+        <div>
+          <label for="txtEditora">Editora<b>*</b></label>
+          <input type="text" name="editora" id="txtEditora" placeholder="Insira o nome da editora do livro" required>
+        </div>
+      </div>
 
-    <label for="classificacao_indicativa">Classificação:</label>
-<!--    <input type="text" id="classificacao_indicativa" name="classificacao_indicativa" required>-->
-    <select id="classificacao_indicativa" name="classificacao_indicativa">
-        <option value="0">Livre</option>
-        <option value="10">+10</option>
-        <option value="12">+12</option>
-        <option value="14">+14</option>]
-        <option value="16">+16</option>
-        <option value="18">+18</option>
-    </select>
-    <br>
+    </div>
 
-    <label for="codigo">Código:</label>
-    <input type="number" id="codigo" name="codigo" required><br>
+    <div class="d-flex inline" style="margin: 0;">
+      <div style="margin-left: 85px;">
+        <label for="txtAno1">1ª publicação<b>*</b></label>
+        <input type="number" min="0" name="lancamento" id="txtAno1" class="num" required>
+      </div>
 
-    <input type="submit" value="Enviar">
-</form>
+      <div>
+        <label for="txtEdicao">Edição<b>*</b></label>
+        <input type="number" min="0" name="edicao" id="txtEdicao" class="num" required>
+      </div>
+
+      <div>
+        <label for="txtAnoEdicao">Ano da edição<b>*</b></label>
+        <input type="number" min="0" name="anoEdicao" id="txtAnoEdicao" class="num" required>
+      </div>
+
+      <div>
+        <label for="txtNumPaginas">Nº de páginas<b>*</b></label>
+        <input type="number" min="1" name="txtNumPaginas" id="txtNumPaginas" class="num" required>
+      </div>
+
+      <div>
+        <label for="classficacaoIndicativa">Classificção indicativa<b>*</b></label>
+        <select name="classificacao_indicativa" id="classficacaoIndicativa" required>
+          <option value="" disabled selected hidden>Selecione a classificação indicativa do livro</option>
+          <option value="0">Livre (L)</option>
+          <option value="10">Para maiores de 10 anos (+10)</option>
+          <option value="12">Para maiores de 12 anos (+12)</option>
+          <option value="14">Para maiores de 14 anos (+14)</option>
+          <option value="16">Para maiores de 16 anos (+16)</option>
+          <option value="18">Para maiores de 18 anos (+18)</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <label for="generos">Gênero<b>*</b></label>
+      <select name="genero" id="generos" class="text-container" required>
+        <option value="" disabled selected hidden>Selecione o gênero do livro</option>
+        <option value="classico">Clássico</option>
+        <option value="romance">Romance</option>
+        <option value="comedia">Comédia</option>
+      </select>
+    </div>
+    <div class="d-flex inline" style="margin: 0;">
+      <div style="margin-left: 85px;">
+        <label for="txtIsbn10">ISBN-10<b>*</b></label>
+        <input type="text" name="isbn10" id="txtIsbn10" pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}-[0-9]{1}"
+          placeholder="Insira o ISBN-10 do livro" class="isbn" required>
+      </div>
+      <div>
+        <label for="txtIsbn13">ISBN-13<b>*</b></label>
+        <input type="text" name="isbn13" id="txtIsbn13" placeholder="Insira o ISBN-13 do livro"
+          pattern="[0-9]{3}-[0-9]{1}-[0-9]{4}-[0-9]{4}-[0-9]{1}" class="isbn" required>
+      </div>
+      <div>
+        <label for="txtCopias">Nº de Cópias<b>*</b></label>
+        <input type="number" min="1" name="copias" id="txtCopias" class="num" required>
+      </div>
+    </div>
+    <div>
+      <label for="txtSinospe">Sinopse<b>*</b></label>
+      <textarea name="sinopse" id="txtSinospe" cols="30" rows="10" maxlength="2000" class="text-container"
+        placeholder="Insira a sinopse do livro" required></textarea>
+    </div>
+    <fieldset>
+      <legend>Estado atual do material<b>*</b></legend>
+      <label class="img material" for="estadoCapa" tabIndex="0">
+        <span class="estadoCapa"></span>
+      </label>
+      <input type="file" name="estadoCapa" id="estadoCapa" accept="image/png, image/jpeg" required>
+
+      <label class="img material" for="estadoContracapa" tabIndex="0">
+        <span class="estadoContracapa"></span>
+      </label>
+      <input type="file" name="estadoContracapa" id="estadoContracapa" accept="image/png, image/jpeg" required>
+
+      <label class="img material" for="estadoLombada" tabIndex="0">
+        <span class="estadoLombada"></span>
+      </label>
+      <input type="file" name="estadoLombada" id="estadoLombada" accept="image/png, image/jpeg" required>
+
+      <label class="img material" for="estadoMiolo" tabIndex="0">
+        <span class="estadoMiolo"></span>
+      </label>
+      <input type="file" name="estadoMiolo" id="estadoMiolo" accept="image/png, image/jpeg" required>
+
+    </fieldset>
+    <p class="info-azul out"><i class="fas fa-circle-info"></i>Cada arquivo deve ser PNG ou JPG e ter até 10MB
+    </p>
+    <div class="d-flex check">
+      <input type="checkbox" name="livroEmprestimo" id="livroEmprestimo">
+      <label for="livroEmprestimo">Livro disponível para empréstimo</label>
+    </div>
+    <div class="d-flex check">
+      <input type="checkbox" name="doador" id="doador" class="check">
+      <label for="doador">Livro doado</label>
+    </div>
+    <div class="d-flex buttons">
+      <a href="http://"><button type="button" style="background-color: #FE4632;">Cancelar</button></a>
+      <button type="submit" style="background-color: #1ED760;">Salvar</button>
+    </div>
+  </form>
+  <script src="/js/add.js"></script>
 </body>
+
 </html>
