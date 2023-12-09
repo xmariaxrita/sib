@@ -17,7 +17,7 @@ public class UserController {
     private UserRepo repo;
 
     @GetMapping("/users")
-    public String index (Model model) {
+    public String index(Model model) {
         List<User> users = (List<User>) repo.findAll();
         model.addAttribute("users", users);
         return "users/index";
@@ -28,10 +28,15 @@ public class UserController {
         return "users/create";
     }
 
-    @PostMapping ("/users/salvar")
+    @PostMapping("/users/salvar")
     public String salvar(User user) {
         repo.save(user);
         return "redirect:/users";
+    }
+
+    @GetMapping("/users/login")
+    public String login() {
+        return "users/login";
     }
 
 }
