@@ -4,13 +4,97 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-BlackOblique.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-BoldOblique.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-ExtraBoldOblique.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-LightOblique.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-MediumOblique.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("/fonts/Aktifo-A/Aktifo-A-SemiBoldOblique.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
 svg {
   display: block;
   margin: 5% auto 0;
 }
 
 form {
-  border: #000 solid 2px;
+  border: #000 solid 3px;
   border-radius: 10px;
   height: 2550px;
   margin: auto;

@@ -88,6 +88,13 @@
   font-style: italic;
 }
 
+body {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
 svg {
   display: block;
   margin: 5% auto 0;
@@ -96,89 +103,127 @@ svg {
 form {
   border: #000 solid 3px;
   border-radius: 10px;
-  height: 1250px;
+  height: 600px;
   margin: auto;
-  width: 925px;
+  width: 575px;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 74px;
-  text-align: center;
-}
-
-p {
-  color: #636369;
-  font-size: 1em;
-  font-weight: 500;
-  margin: 10px 0 46px;
+  margin: 74px 0 46px;
   text-align: center;
 }
 
 div {
   display: inline-block;
-  margin: 25px 150px;
+  margin: 15px 85px;
 }
 
 label {
+  display: block;
   font-size: 1em;
   font-weight: 600;
 }
 
-input,
-select {
-  background-color: #fff;
-  border: 2px solid #000;
-  border-radius: 10px;
-  display: flex;
-  font-weight: 600;
-  height: 45px;
-  margin-top: 13px;
-  padding: 0 10px;
-  width: 600px;
+p {
+  font-weight: 500;
 }
 
-fieldset {
-  border: none;
-  border-radius: 10px;
-  border-top: 2px solid #000;
-  margin: 40px 0;
-}
-
-legend {
-  font-size: 1.2em;
+a {
+  color: #1ed760;
   font-weight: 600;
-  margin: 0 0 30px 100px;
+  text-decoration: none;
 }
 
 button {
+  display: inline-block;
+}
+
+i {
+  font-size: 20px;
+}
+
+p,
+a {
+  font-size: 12px;
+}
+
+img,
+.side-a {
+  margin: 0 30px;
+}
+
+.styled-input {
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-weight: 600;
+  height: 45px;
+  padding-left: 10px;
+  width: 400px;
+}
+
+.btn-login {
   background-color: #1ed760;
   border: none;
   border-radius: 10px;
   color: #fff;
   display: block;
-  float: right;
   font-weight: bold;
   font-size: 1.5em;
   height: 50px;
-  margin: 40px 50px 0 0;
-  width: 190px;
+  margin: 55px auto 0;
+  width: 295px;
+}
+
+.btn-password {
+  align-items: center;
+  background: none;
+  border: none;
+  display: inline;
+  margin-left: -50px;
 }
 
 .d-flex {
   display: flex;
-  margin: 0;
 }
 
-#txtCep,
-#txtEstados {
-  display: flex;
-  width: 250px;
+.check {
+  align-items: center;
+  margin-top: 0;
+  width: 400px;
 }
-
-input::placeholder {
-  color: #7d7c83;
-  font-size: 0.875em;
+.check label {
   font-weight: 500;
+  margin-right: 130px;
+}
+
+.check label,
+.check a {
+  font-size: 12px;
+  display: inline;
+}
+
+.text {
+  justify-content: space-around;
+  margin: 20px auto 0;
+  width: 295px;
+}
+
+input[type="checkbox"] {
+  height: 13px;
+  margin-right: 10px;
+  width: 13px;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#error-message {
+  margin: 0px 85px;
+  text-align: left;
 }
