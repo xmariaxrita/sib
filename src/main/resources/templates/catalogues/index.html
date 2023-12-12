@@ -46,7 +46,6 @@
         <td th:text=" ${c.classificacao_indicativa}"></td>
         <td th:text=" ${c.codigo}"></td>
 
-
         <td>
 
             <a th:href="@{/catalogues/edit/{id}(id=${c.id})}" class="btn btn-warning">Editar</a>
@@ -54,6 +53,7 @@
             <a href="#"
                 th:onclick="'if(confirm(\'Confirma?\')) {window.location.href = \'' + @{/catalogues/{id}(id=${c.id})} + '/excluir\'}'"
                 class="btn btn-danger">
+
             Excluir
         </a>
 

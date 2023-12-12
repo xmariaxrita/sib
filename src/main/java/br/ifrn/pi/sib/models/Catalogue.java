@@ -1,10 +1,6 @@
 package br.ifrn.pi.sib.models;
 
-
 import jakarta.persistence.*;
-import org.springframework.format.annotation.DateTimeFormat;
-
-import java.util.Date;
 
 @Entity
 @Table(name = "acervo")
@@ -14,23 +10,22 @@ public class Catalogue {
     @Column(name = "id")
     private int id;
 
-    @Column(name="autor")
+    @Column(name = "autor")
     private String autor;
 
-    @Column(name="classificacao_indicativa")
+    @Column(name = "classificacao_indicativa")
     private int classificacao_indicativa;
 
-    @Column(name="lancamento")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date lancamento;
+    @Column(name = "lancamento")
+    private int lancamento;
 
-    @Column(name="titulo")
+    @Column(name = "titulo")
     private String titulo;
 
-    @Column(name="codigo")
+    @Column(name = "codigo")
     private int codigo;
 
-    public Catalogue(int id, String autor, int classificacao_indicativa, Date lancamento, String titulo, int codigo) {
+    public Catalogue(int id, String autor, int classificacao_indicativa, int lancamento, String titulo, int codigo) {
         this.id = id;
         this.autor = autor;
         this.classificacao_indicativa = classificacao_indicativa;
@@ -66,11 +61,11 @@ public class Catalogue {
         this.classificacao_indicativa = classificacao_indicativa;
     }
 
-    public Date getLancamento() {
+    public int getLancamento() {
         return lancamento;
     }
 
-    public void setLancamento(Date lancamento) {
+    public void setLancamento(int lancamento) {
         this.lancamento = lancamento;
     }
 
