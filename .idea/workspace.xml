@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/catalogues/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/repositorio/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ifrn/pi/sib/repositorio/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +87,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

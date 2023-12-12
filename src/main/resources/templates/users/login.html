@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@
             <path d="M39.0363 20.1643L46.0048 17.4866L47.1662 20.3335L40.1977 23.0112L39.0363 20.1643Z"
                 fill="#A49404" />
         </svg>
-        <form action="" method="post">
+        <form action="/logar" method="post">
             <h2>Entrar</h2>
             <div>
                 <label for="txtEmail">Nome de usuário</label>
@@ -58,12 +58,13 @@
                     <i class="far fa-eye" id="visibilidadeIcon"></i>
                 </button>
             </div>
+            <div th:text = "${erro}"></div>
             <div class="d-flex check">
                 <input type="checkbox" name="lembrar" id="lembrar">
                 <label for="lembrar">Lembre-se de mim</label>
                 <a href="#">Esqueceu sua senha?</a>
             </div>
-            <button type="button" class="btn-login">Entrar</button>
+            <button type="submit" class="btn-login">Entrar</button>
             <div class="d-flex text">
                 <p>Não tem uma conta ainda?</p>
                 <a href="/users/create">Cadastre-se</a>
