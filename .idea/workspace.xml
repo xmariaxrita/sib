@@ -48,7 +48,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -122,6 +121,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="" />
@@ -133,6 +135,8 @@
       <workItem from="1698402025783" duration="26000" />
       <workItem from="1700717039058" duration="325000" />
       <workItem from="1700717369497" duration="643000" />
+      <workItem from="1702762445175" duration="1644000" />
+      <workItem from="1702765010203" duration="1556000" />
     </task>
     <task id="LOCAL-00001" summary="Reenvio dos arquivos">
       <option name="closed" value="true" />
