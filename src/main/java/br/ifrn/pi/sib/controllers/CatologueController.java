@@ -24,6 +24,16 @@ public class CatologueController {
         return "catalogues/index";
     }
 
+    @GetMapping("/catalogues/edit/{id}")
+    public String editar(@PathVariable int id, Model model) {
+
+        Catalogue catalogue = repo.findById(id).orElse(null);
+
+        model.addAttribute("catalogue", catalogue);
+
+        return "catalogues/edit";
+    }
+
     @GetMapping("/catalogues/{id}/excluir")
     public String excluir(@PathVariable int id){
         repo.deleteById(id);
@@ -40,6 +50,8 @@ public class CatologueController {
     public String novo(Catalogue catalogue){
         repo.save(catalogue);
         return "redirect:/catalogues";
+
+
     }
 
 }
