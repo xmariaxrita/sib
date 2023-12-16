@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+// ? import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.List;
 
@@ -14,10 +15,14 @@ public class HomeController {
 
     @Autowired
     private UserRepo repo;
+
     @GetMapping("/")
-    public String index(Model model){
-        List<User> Usuarios = (List<User>)repo.findAll();
+    // ? public String index(Model model, HttpServletRequest request) throws UnsupportedEncodingException
+    public String index(Model model) {
+        List<User> Usuarios = (List<User>) repo.findAll();
         model.addAttribute("users", Usuarios);
+        // ? model.addAttribute("nome", CookieService.getCookie(request, "nomeUsuario"));
+        // ? Cookies e Filtros de autenticação - Java SpringBoot - TORNE-SE UM PROGRAMADOR (39:20)
         return "index";
     }
 
