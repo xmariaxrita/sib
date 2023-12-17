@@ -22,7 +22,6 @@ public class HomeController {
         List<User> Usuarios = (List<User>) repo.findAll();
         model.addAttribute("users", Usuarios);
         // ? model.addAttribute("nome", CookieService.getCookie(request, "nomeUsuario"));
-        // ? Cookies e Filtros de autenticação - Java SpringBoot - TORNE-SE UM PROGRAMADOR (39:20)
         return "index";
     }
 

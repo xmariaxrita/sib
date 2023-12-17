@@ -1,17 +1,18 @@
 package br.ifrn.pi.sib.service;
 
 import jakarta.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.Optional;
+
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 
 public class CookieService {
+
     public static void setCookie(HttpServletResponse response, String key, String valor, int segundos)
             throws IOException {
         Cookie cookie = new Cookie(key, URLEncoder.encode(valor, "UTF-8"));
@@ -28,7 +29,7 @@ public class CookieService {
                 .map(e -> e.getValue())
                 .orElse(null);
 
-        valor = URLDecoder.decode(valor, "UTF-8");
+        valor = URLDecoder.decode(String.valueOf(valor != null), "UTF-8");
         return valor;
     }
 }
