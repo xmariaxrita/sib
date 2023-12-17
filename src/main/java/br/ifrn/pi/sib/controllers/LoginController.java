@@ -23,7 +23,7 @@ public class LoginController {
     }
 
     @PostMapping("/logar")
-    public String logar(Model model, User uParam, String lembrar, HttpServletResponse response) throws IOException{
+    public String logar(Model model, User uParam, String lembrar, HttpServletResponse response) throws IOException {
         User u = this.repo.Login(uParam.getEmail(), uParam.getSenha());
         if (u != null) {
             int tempoLogado = (60 * 60); // * Cookie de 1h
@@ -33,7 +33,8 @@ public class LoginController {
             CookieService.setCookie(response, "nomeUsuario", String.valueOf(u.getNome()), tempoLogado);
             return "redirect:/";
         }
-        model.addAttribute("erro", "Usuário ou senha inválidos");
+        model.addAttribute("erro",
+                "<i class='fas fa-exclamation-circle' style='margin-right: 5px;'></i>Usuário ou senha inválidos");
         return "users/login";
     }
 
