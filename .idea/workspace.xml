@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     </list>
+=======
+    <list default="true" id="b900815a-a2df-424e-984b-9cc9cf5e08d2" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +140,7 @@
       <workItem from="1700717039058" duration="325000" />
       <workItem from="1700717369497" duration="643000" />
       <workItem from="1702762445175" duration="1644000" />
-      <workItem from="1702765010203" duration="1556000" />
+      <workItem from="1702765010203" duration="2165000" />
     </task>
     <task id="LOCAL-00001" summary="Reenvio dos arquivos">
       <option name="closed" value="true" />
