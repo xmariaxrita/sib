@@ -189,11 +189,31 @@ img,
   display: flex;
 }
 
+.text {
+  justify-content: space-around;
+  margin: 20px auto 0;
+  width: 295px;
+}
+
+/* ! Não funciona
+ ! .error-message {
+ ! align-items: center;
+ ! background-color: #fe706040;
+ ! border-radius: 10px;
+ ! color: #fe4632;
+ ! display: flex;
+ ! font-size: 1em;
+ ! height: 50px;
+ ! justify-content: center;
+ ! width: 575px;
+! } */
+
 .check {
   align-items: center;
   margin-top: 0;
   width: 400px;
 }
+
 .check label {
   font-weight: 500;
   margin-right: 130px;
@@ -203,12 +223,6 @@ img,
 .check a {
   font-size: 12px;
   display: inline;
-}
-
-.text {
-  justify-content: space-around;
-  margin: 20px auto 0;
-  width: 295px;
 }
 
 input[type="checkbox"] {

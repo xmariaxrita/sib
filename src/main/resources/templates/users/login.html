@@ -58,7 +58,6 @@
                     <i class="far fa-eye" id="visibilidadeIcon"></i>
                 </button>
             </div>
-            <p th:text="${erro}" style="color: red;"></p>
             <div class="d-flex check">
                 <input type="checkbox" name="lembrar" id="lembrar">
                 <label for="lembrar">Lembre-se de mim</label>
@@ -71,6 +70,16 @@
             </div>
 
         </form>
+        <div>
+            <p th:text="${erro}" style="align-items: center;
+            border-radius: 10px;
+            color: #fe4632;
+            display: flex;
+            font-size: 1em;
+            height: 50px;
+            justify-content: center;
+            width: 575px;"></p>
+        </div>
     </div>
     <img src="/img/imgLogin.png">
     <script src="/js/login.js"></script>
