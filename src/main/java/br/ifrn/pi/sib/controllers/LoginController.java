@@ -23,7 +23,8 @@ public class LoginController {
     }
 
     @PostMapping("/logar")
-    public String logar(Model model, User uParam, String lembrar, HttpServletResponse response) throws IOException {
+    // ! public String logar(Model model, User uParam, String lembrar, HttpServletResponse response) throws IOException
+    public String logar(Model model, User uParam, String lembrar, HttpServletResponse response)  {
         User u = this.repo.Login(uParam.getEmail(), uParam.getSenha());
         if (u != null) {
             int tempoLogado = (60 * 60); // * Cookie de 1h
@@ -41,7 +42,8 @@ public class LoginController {
     // * Rota de sair
     // TODO: fazer o menu com a opção de sair!
     @GetMapping("/sair")
-    public String sair(HttpServletResponse response) throws IOException {
+    // ! public String sair(HttpServletResponse response) throws IOException
+    public String sair(HttpServletResponse response) {
 
         CookieService.setCookie(response, "usuariosId", "", 0);
         return "redirect:/";
