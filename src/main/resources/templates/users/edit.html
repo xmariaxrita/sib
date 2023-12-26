@@ -43,36 +43,36 @@
     <path d="M39.0363 20.1643L46.0048 17.4866L47.1662 20.3335L40.1977 23.0112L39.0363 20.1643Z" fill="#A49404" />
   </svg>
 
-  <form method="post">
+  <form method="post" th:action="@{/users/update}" enctype="multipart/form-data">
     <h2>Bem vindo ao SIB!</h2>
     <p>Coisas importantes primeiro...</p>
     <div>
       <label for="txtNome">Nome</label>
-      <input type="text" id="txtNome" name="nome" placeholder="Insira seu nome completo" required>
+      <input type="text" id="txtNome" name="nome" placeholder="Insira seu nome completo" required value=",lmknknbjkmbj">
     </div>
     <div>
       <label for="txtNascimento">Data de nascimento</label>
-      <input type="date" id="txtNascimento" name="nasc" required>
+      <input type="date" id="txtNascimento" name="nasc" required value="12/12/2000">
     </div>
     <div>
       <label for="txtFone">Número de telefone</label>
-      <input type="tel" id="txtFone" name="fone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"
+      <input type="tel" id="txtFone" name="fone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" value="(12)99999-9999"
         placeholder="Ex.: (00)00000-0000" required>
     </div>
     <fieldset>
       <legend>Endereço</legend>
       <div>
         <label for="txtCidade">Cidade</label>
-        <input type="text" id="txtCidade" name="cidade" placeholder="Insira o nome da sua cidade" required>
+        <input type="text" id="txtCidade" name="cidade" placeholder="Insira o nome da sua cidade" required value="Nome da cidade">
       </div>
       <div>
         <label for="txtBairro">Bairro</label>
-        <input type="text" id="txtBairro" name="bairro" placeholder="Insira o nome do seu bairro" required>
+        <input type="text" id="txtBairro" name="bairro" placeholder="Insira o nome do seu bairro" required value="bairro">
       </div>
       <div class="d-flex">
         <div style="margin-right: 0px;">
           <label for="txtCep">CEP</label>
-          <input type="text" id="txtCep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="Ex.: 00000-000" required>
+          <input type="text" id="txtCep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="Ex.: 00000-000" required value="99999-999" >
         </div>
         <div style="margin-left: 100px; margin-right: 150px;">
           <label for="txtEstados">Estado</label>
@@ -108,6 +108,11 @@
           </select>
         </div>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Imagem</legend>
+      <input type="file" name="image">
     </fieldset>
     <button type="submit" class="btn-edit">Salvar</button>
   </form>
